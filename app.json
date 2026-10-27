@@ -1,0 +1,30 @@
+{
+  "expo": {
+    "name": "ميزان المخزون",
+    "slug": "mizan-stock-mobile",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "plugins": [
+      "expo-router",
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "يحتاج التطبيق إلى الكاميرا لمسح باركود المنتجات."
+        }
+      ],
+      "expo-sqlite"
+    ],
+    "android": {
+      "package": "com.example.mizanstock",
+      "permissions": ["CAMERA"]
+    },
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSCameraUsageDescription": "مسح باركود المنتجات."
+      }
+    }
+  }
+}
